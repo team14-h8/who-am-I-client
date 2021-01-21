@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import VueSocketIO from 'vue-socket.io'
 
+// this is a comment to start development branch
 Vue.config.productionTip = false
 
 Vue.use(new VueSocketIO({
