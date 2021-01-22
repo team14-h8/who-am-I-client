@@ -5,12 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    users: [],
-    welcomeMessage: {}
+    users: []
   },
   mutations: {
     SOCKET_init (state, payload) {
-      state.welcomeMessage = payload.message
+      state.users = payload
     },
     SOCKET_getAllUsers (state, payload) {
       state.users = payload

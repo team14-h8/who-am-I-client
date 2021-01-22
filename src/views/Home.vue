@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p>{{ welcomeMessage }} </p>
+    <p> Welcome to Who Am I! </p>
     <EnterForm />
   </div>
 </template>
@@ -13,11 +13,6 @@ export default {
   name: 'Home',
   components: {
     EnterForm
-  },
-  computed: {
-    welcomeMessage () {
-      return this.$store.state.welcomeMessage
-    }
   }
 }
 </script>
