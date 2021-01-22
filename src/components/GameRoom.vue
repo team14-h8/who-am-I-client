@@ -32,7 +32,7 @@ export default {
   watch: {
     isLose: function (val, oldVal) {
       if (val) {
-        console.log('You lose')
+        this.$swal('You Lose!!!')
         this.$store.commit('finishGame')
       }
     }
