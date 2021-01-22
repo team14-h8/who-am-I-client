@@ -27,7 +27,9 @@ export default new Vuex.Store({
       state.isStarted = true
     },
     SOCKET_updateScores (state, scores) {
-      state.scores = scores
+      state.scores = scores.sort((a, b) => {
+        return b.score - a.score
+      })
     },
     SOCKET_playerLose (state) {
       state.isLose = true

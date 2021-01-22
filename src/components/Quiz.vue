@@ -52,7 +52,7 @@ export default {
         this.clearAnswer()
         this.nextQuestions()
       } else {
-        console.log('Wrong answer')
+        this.$swal('Wrong answer')
       }
     },
     nextQuestions () {
@@ -64,7 +64,12 @@ export default {
       }
     },
     playerWin () {
-      console.log('Congrats')
+      const context = this
+      this
+        .$swal('Congratulations you win!')
+        .then(function () {
+          context.$store.commit('finishGame')
+        })
     }
   },
   computed: mapState([
