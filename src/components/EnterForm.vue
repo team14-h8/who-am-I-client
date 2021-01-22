@@ -1,10 +1,15 @@
 <template>
-  <div class='container'>
-    <form @submit.prevent='playGame'>
-      <input type='text' placeholder="Enter your username..."
-      v-model='username'>
-        <button type='submit' class='btn btn-sm btn-primary'>Let's play!</button>
-    </form>
+  <div class="container">
+    <div class="row">
+      <form class="form-container" @submit.prevent='playGame' style="background-color: #322f3d; margin-top: 200px; padding: 50px; width: auto; margin: auto; margin-top: 100px; border-color: #cc0e74; border-style: solid; border-radius: 25px;">
+        <h3 class="welcome" style="color: #e6739f;">Wanna play Who Am I?</h3>
+        <div class="mb-3">
+          <label for="playerName" class="form-label" style="margin-top: 20px; color: #e6739f;"><h5>Put your name here!</h5></label>
+          <input type="text" class="form-control" aria-describedby="nameHelp" id="player-name" v-model='username'>
+        </div>
+        <button type="submit" class="btn btn-dark">Start the Game!</button>
+      </form>
+    </div>
   </div>
 </template>
 
