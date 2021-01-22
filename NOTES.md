@@ -10,30 +10,32 @@ Tic Tac Toe
 
 * user -> server : user connected
 
-# Room Screen
+<!-- # Room Screen -->
 
-## Feature/Action
+<!-- ## Feature/Action -->
 
-* list room
-* create room
-* join room
+<!-- * list room -->
+<!-- * create room -->
+<!-- * join room -->
 
-## Event List
+<!-- ## Event List -->
 
-* server -> user : list room
-* user -> server: create room
-* server -> user: room created
-* user -> server: join room
+<!-- * server -> user : list room -->
+<!-- * user -> server: create room -->
+<!-- * server -> user: room created -->
+<!-- * user -> server: join room -->
 
 # Game Screen
 
 ## Feature/Action
 
 * player ready
-* assign player icon
-* player turn
-* game board
-* click grid
+<!-- * assign player icon -->
+<!-- * player turn -->
+<!-- * game board -->
+<!-- * click grid -->
+* leaderboard
+* quiz
 * calculate win condition
 * number of match/score
 * reset

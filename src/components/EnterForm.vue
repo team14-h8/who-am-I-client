@@ -25,6 +25,7 @@ export default {
   methods: {
     playGame () {
       this.$socket.emit('newPlayer', { username: this.username, score: this.score })
+      this.$store.commit('changeUsername', this.username)
       this.$router.push('/game')
     }
   }
