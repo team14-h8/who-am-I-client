@@ -23,7 +23,7 @@
     <div class="row" style="margin-top: 50px;">
       <!-- Jawaban -->
       <form @submit.prevent="submitAnswer">
-        <h3 style="color: #eeeeee">Put your guess here!</h3>
+        <h3 style="color: #eeeeee; font-family: 'Fredoka One', cursive;">Put your guess here!</h3>
         <input v-model="answer" type="text" class="form-control" id="answer-input" aria-describedby="answerInput">
         <button class="btn btn-danger mt-3" type="submit">Submit</button>
       </form>

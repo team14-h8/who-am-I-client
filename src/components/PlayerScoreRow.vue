@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-9">
+    <div class="col-9" style="font-family: 'Archivo Black', sans-serif;">
       <span>{{ score.user }}</span>
     </div>
     <div class="col-3">
