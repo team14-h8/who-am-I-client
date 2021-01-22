@@ -12,7 +12,8 @@ export default new Vuex.Store({
     questions: [],
     scores: [],
     username: '',
-    users: []
+    users: [],
+    message: []
   },
   mutations: {
     SOCKET_init (state, payload) {
@@ -34,6 +35,9 @@ export default new Vuex.Store({
       state.scores = scores.sort((a, b) => {
         return b.score - a.score
       })
+    },
+    SOCKET_sendMessages (state, payload) {
+      state.message.push(payload)
     },
     SOCKET_playerLose (state) {
       state.isLose = true
