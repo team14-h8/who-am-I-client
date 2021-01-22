@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p> Welcome to Who Am I! </p>
+    <p style="font-family: 'Gorditas', cursive;"> Welcome to Who Am I! </p>
     <EnterForm />
   </div>
 </template>

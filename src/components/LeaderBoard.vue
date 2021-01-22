@@ -3,7 +3,7 @@
     style="background-color: #322f3d; height: 550px ; border-radius: 25px 0px 0px 25px; border-color: #cc0e74; border-style: solid">
     <!-- Leaderboard -->
     <div class="row">
-      <h4 style="text-align: center; margin-top: 10px; color: #e6739f;">Leaderboard:</h4>
+      <h4 style="text-align: center; margin-top: 10px; color: #e6739f; font-family: 'Fredoka One', cursive;">Leaderboard:</h4>
     </div>
     <div class="row" style="margin-top: 20px">
       <!-- Name -->
