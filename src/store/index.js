@@ -30,9 +30,17 @@ export default new Vuex.Store({
         image: "https://i.ibb.co/ynkRNR5/raff-ahmad-pixelated.png",
         answer: "raffi ahmad"
       }
-    ]
+    ],
+    
+    users: []
   },
   mutations: {
+    SOCKET_init (state, payload) {
+      state.users = payload
+    },
+    SOCKET_getAllUsers (state, payload) {
+      state.users = payload
+    }
   },
   actions: {
   },
