@@ -1,6 +1,10 @@
 <template>
   <div class='container' >
     <p>{{ message }}</p>
+    <div v-for='user in users' :key='user.id'>
+      <p>{{ user.username }}</p>
+      <p>{{ user.point }}</p>
+    </div>
   </div>
 </template>
 
@@ -9,7 +13,12 @@ export default {
   name: 'GameBoard',
   data () {
     return {
-      message: 'you\'re inside the game!'
+      message: 'youre inside the game!'
+    }
+  },
+  computed: {
+    users () {
+      return this.$store.state.users
     }
   }
 }

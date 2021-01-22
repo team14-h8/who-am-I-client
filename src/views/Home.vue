@@ -11,18 +11,12 @@ import EnterForm from '@/components/EnterForm'
 
 export default {
   name: 'Home',
-  data () {
-    return {
-      welcomeMessage: ''
-    }
-  },
   components: {
     EnterForm
   },
-  sockets: {
-    init (payload) {
-      this.welcomeMessage = payload.message
-      console.log(payload)
+  computed: {
+    welcomeMessage () {
+      return this.$store.state.welcomeMessage
     }
   }
 }

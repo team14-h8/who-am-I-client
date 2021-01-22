@@ -13,11 +13,13 @@ export default {
   name: 'EnterForm',
   data () {
     return {
-      username: ''
+      username: '',
+      score: 0
     }
   },
   methods: {
     playGame () {
+      this.$socket.emit('newPlayer', { username: this.username, score: this.score })
       this.$router.push('/game')
     }
   }
