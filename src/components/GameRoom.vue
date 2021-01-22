@@ -1,11 +1,13 @@
 <template>
   <div>
-    <div v-if="!isStarted">
-      <h1>Please wait</h1>
-      <button @click.prevent="playerStartGame" class="btn btn-primary">Start</button>
+    <div v-if="!isStarted" class="box">
+      <h1>Waiting...</h1>
+      <button @click.prevent="playerStartGame" class="btn btn-danger mt-3 btn-lg">Start</button>
     </div>
-    <quiz v-else></quiz>
-    <leader-board></leader-board>
+    <div v-else class="row">
+      <leader-board></leader-board>
+      <quiz ></quiz>
+    </div>
   </div>
 </template>
 
@@ -39,5 +41,19 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  color: #e6739f;
+}
 
+.box {
+  background-color: #322f3d;
+  margin-top: 200px;
+  padding: 50px;
+  width: 700px;
+  margin: auto;
+  margin-top: 100px;
+  border-color: #cc0e74;
+  border-style: solid;
+  border-radius: 25px;
+}
 </style>
