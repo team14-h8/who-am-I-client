@@ -10,7 +10,7 @@
       <h5 style="text-align: center; color: #e6739f">Name</h5>
       <player-score-row
         v-for="score in scores"
-        :key="score.user"
+        :key="score.id"
         :score="score"></player-score-row>
     </div>
   </div>

@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    room: 'default',
+    rooms: [],
+    room: '',
     isStarted: false,
     isLose: false,
     questions: [],
@@ -19,6 +20,9 @@ export default new Vuex.Store({
     },
     SOCKET_getAllUsers (state, payload) {
       state.users = payload
+    },
+    SOCKET_getAllRooms (state, rooms) {
+      state.rooms = rooms
     },
     SOCKET_initQuiz (state, questions) {
       state.questions = questions
@@ -40,6 +44,9 @@ export default new Vuex.Store({
     },
     changeUsername (state, name) {
       state.username = name
+    },
+    joinRoom (state, room) {
+      state.room = room
     }
   },
   actions: {
